@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600&display=swap');
+*{
+	font-family: 'Nunito', sans-serif;
+	margin:0; padding:0;
+	box-sizing: border-box;
+	outline:none; border:none;
+	text-decoration: none;
+	transition: all .2s linear;
+	text-transform:capitalize;
+
+
+}
+
+html{
+	font-size: 60%;
+	overflow-x: hidden;
+
+}
+
+body{
+	background: #eee;
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 3rem 2rem;
+}
+
+.container .button:hover{
+	background: white;
+}
+
+.container .item{
+	font-size:4.5rem;
+	color:#CC0033 ;
+	text-transform: uppercase;
+}
+
+.container .products-container{
+	display:grid;
+	gap:5rem;
+}
+
+.container .products-container .product{
+	text-align: center;
+	padding: 3rem 2rem;
+	background-image: url('images/banner_img.jpg');
+	box-shadow: 0 .5rem 1rem rgba(141, 191, 104, 0.705);
+	outline:.1rem solid #d8d282;
+	outline-offset: -1.5rem;
+	cursor: pointer;
+}
+
+
+.container .products-container .product:hover{
+	outline: .2rem solid #425003;
+
+}
+
+
+.container .products-container .product a{
+	padding:2rem 0;
+	font-size: 2.5rem;
+	color:white;
+	margin-left: 15rem;
+
+}
+
+.container .products-container .product h3{
+		font-size:1.5rem;
+		margin-left: 15rem;
+}
+.container .products-container .product:hover h2{
+	color:#101010;
+}
+
+
+.container .products-container .product .price{
+	font-size:1rem;
+	color:#e6630b;
+	margin-left: 15rem;
+}
+
+.container .products-container .product .price:hover{
+	color:rgb(97, 95, 95);
+}
+
+
+
+@media(max-width: 991px){
+	html{
+		font-size: 55%;
+	}
+}
+
+@media(max-width: 768px){
+	html{
+		font-size: 50%;
+	}
+}
+
+@media(max-width: 450px){
+	html{
+		font-size: 50%;
+	}
+}
